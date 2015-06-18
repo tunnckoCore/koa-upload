@@ -8,5 +8,7 @@
 'use strict'
 
 module.exports = function koaUpload () {
-  // body
+  return function * () {
+
+  }
 }
