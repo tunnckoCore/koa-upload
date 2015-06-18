@@ -16,7 +16,14 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var koaUpload = require('koa-upload')
+var koa = require('koa')
+var upload = require('koa-upload')
+
+var opts = {}
+var app = koa()
+
+app.use(upload(opts)).listen()
+
 ```
 
 
